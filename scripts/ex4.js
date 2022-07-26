@@ -70,15 +70,15 @@ const deleteCFigureEx4 = () => {
 const dFigureEx4 = () => {
     const showDFigureEx4 = document.getElementById('showDFigureEx4');
     let figure = ``;
-    figure += `<p>(c)</p>
+    figure += `<p>(d)</p>
     `;
     // Draws lines
     let i = 0;
     do {
         figure += `<p>`;
         // Draws columns
-        for(let j=0; j<10; j++){
-            if(j>=i){
+        for(let j=9; j>=0; j--){
+            if(j>i){
                 figure += ` `;
             } else {
                 figure += `*`;
