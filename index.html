@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercises_flow_Control.pdf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/style.css"></style>
+</head>
+
+<body>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Ejercicio 1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>1. Pedir un nº y decir si es par o impar</p>
+                    <p><a href="./scripts/ex1.js" target="_blank">Ver código</a></p>
+                    <label for="number">Introduce un número: </label>
+                    <input type="text" id="number">
+                    <button onclick="oddOrEven()">¿Es par o impar?</button>
+                    <p id="oddOrEven"></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    Ejercicio 2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>2. Escribir un programa que haga lo mismo pero con switch</p>
+                    <p><a href="./scripts/ex2.js" target="_blank">Ver código</a></p>
+                    <label for="numberSwitch">Introduce un número: </label>
+                    <input type="text" id="numberSwitch">
+                    <button onclick="oddOrEvenEx2()">¿Es par o impar?</button>
+                    <p id="oddOrEvenSwitch"></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    Ejercicio 3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>3. Modificar 1 para que siga pidiendo un nº hasta que el usuario introduzca una cadena que
+                        represente un nº. Usar
+                        isNaN( ) para comprobarlo</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
+                    Ejercicio 4
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>4. Usando astutamente los bucles for, while y do while. (Hay que usarlas todas al menos una vez).
+                        Crear las
+                        siguientes figuras usando *, espacios en blanco y saltos de línea</p>
+                    <img src="./assets/img/4.png">
+                    </br>
+                    <p><a href="./scripts/ex4.js" target="_blank">Ver código</a></p>
+                    <button onclick="aFigureEx4()">Representar figura A</button>
+                    <button onclick="deleteAFigureEx4()">Borrar figura A</button></br></br>
+                    <div id="showAFigureEx4"></div>
+                    <button onclick="bFigureEx4()">Representar figura B</button>
+                    <button onclick="deleteBFigureEx4()">Borrar figura B</button></br></br>
+                    <div id="showBFigureEx4"></div>
+                    <button onclick="cFigureEx4()">Representar figura C</button>
+                    <button onclick="deleteCFigureEx4()">Borrar figura C</button></br></br>
+                    <div id="showCFigureEx4"></div>
+                    <button onclick="dFigureEx4()">Representar figura D</button>
+                    <button onclick="deleteDFigureEx4()">Borrar figura D</button></br></br>
+                    <div id="showDFigureEx4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/ex1.js"></script>
+    <script src="./scripts/ex2.js"></script>
+    <script src="./scripts/ex4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
